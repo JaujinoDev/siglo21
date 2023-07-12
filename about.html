@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Siglo XXI</title>
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!--Navegacion-->
+
+    <nav>
+      <div class="logo">
+        <h2>SIGLO<span>XXI</span></h2>
+      </div>
+      <div class="navigation">
+        <ul>
+          <i id="menu-close" class="fas fa-times"></i>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a class="active" href="about.html">Sobre Nosotros</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="curse.html">Cursos</a></li>
+          <li><a href="contact.html">Contacto</a></li>
+        </ul>
+        <img id="menu-btn" src="images/menu.png" alt="" />
+      </div>
+    </nav>
+
+    <!-- Inicio -->
+
+    <section id="about-inicio">
+      <h2>Somos SIGLO XXI</h2>
+    </section>
+
+    <section id="about-container">
+      <div class="about-img">
+        <img src="images/a.png" alt="" />
+      </div>
+
+      <div class="about-text">
+        <h2>
+          Bienvenido a SIGLO XXI, Potencia el rendimiento y capacidad de tu equipo con
+          los mejores especialistas.
+        </h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex rerum
+          exercitationem voluptatem praesentium, amet reprehenderit fuga odio.
+          Consectetur, veritatis molestiae.
+        </p>
+        <div class="about-fe">
+          <img src="images/fe1.png" alt="" />
+          <div class="fe-text">
+            <h5>Mas de 400 Productos en nuestra tienda</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,
+              aliquam?
+            </p>
+          </div>
+        </div>
+        <div class="about-fe">
+          <img src="images/fe2.png" alt="" />
+          <div class="fe-text">
+            <h5>Acceso a beneficios</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,
+              aliquam?
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Caracteristicas -->
+
+    <section id="features">
+      <h1>Impresionantes Caracteristicas</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem rem
+        esse!
+      </p>
+      <div class="fea-base">
+        <div class="fea-box">
+          <i class="fas fa-graduation-cap"></i>
+          <h3>Brindamos atencion  A1</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. sit amet
+            consectetur adipisicing elit
+          </p>
+        </div>
+        <div class="fea-box">
+          <i class="fas fa-certificate"></i>
+          <h3>Servicio presencial y Online</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. sit amet
+            consectetur adipisicing elit
+          </p>
+        </div>
+        <div class="fea-box">
+          <i class="fas fa-award"></i>
+          <h3>Certificacion de Nivel Internacional</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. sit amet
+            consectetur adipisicing elit
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="trust">
+        <h1>Garantia de un producto de calidad</h1>
+        <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem rem
+        esse!
+        </p>
+        <div class="trust-img">
+            <img src="images/trust (1).png" alt="">
+            <img src="images/trust (2).png" alt="">
+            <img src="images/trust (3).png" alt="">
+            <img src="images/trust (4).png" alt="">
+            <img src="images/trust (5).png" alt="">
+            <img src="images/trust (6).png" alt="">
+        </div>
+    </section>
+
+    <!-- footer -->
+
+    <footer>
+      
+      <div class="footer-col">
+        <h3>Links de Recursos</h3>
+        <li>Computo Inicial</li>
+        <li>logica de redes</li>
+        <li>servicio tecnico</li>
+        <li>camaras de seguridad</li>
+      </div>
+      <div class="footer-col">
+        <h3>Caracteristicas</h3>
+        <li>sobre nosotros</li>
+        <li>productos</li>
+        <li>Politicas de Privacidad</li>
+        <li>aviso legal</li>
+      </div>
+
+      <div class="footer-col">
+        <h3>Recibe nuestras ofertas</h3>
+        <p>Creenos, Solo enviamos ofertas en promocion</p>
+        <div class="subscribe">
+          <input type="text" placeholder="Tu correo electronico" />
+          <a href="#" class="yellow">Suscribete</a>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <p>
+          Copyright &copy; 2023 Todos los derechos reservados - Desarrollado Por
+          WebCrafter.Dev
+        </p>
+        <div class="pro-links">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-linkedin-in"></i>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      $("#menu-btn").click(function () {
+        $("nav .navigation ul").addClass("active");
+      });
+      $("#menu-close").click(function () {
+        $("nav .navigation ul").removeClass("active");
+      });
+    </script>
+  </body>
+</html>
